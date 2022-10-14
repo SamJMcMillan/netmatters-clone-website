@@ -7,6 +7,7 @@
 body {
   font-family: $font-main;
   font-size: 1rem;
+  color: $font-color;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
   text-align: center;
@@ -15,4 +16,8 @@ body {
 
 header {
   margin-top: 0px;
+}
+
+.footer-list li {
+  list-style: none;
 }
