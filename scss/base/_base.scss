@@ -1,0 +1,18 @@
+// - Base Style Rules ---------- //
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  line-height: 1.42857143;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  margin-top: 0px;
+}
