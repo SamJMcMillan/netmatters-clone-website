@@ -4,3 +4,10 @@
   height: 60vh;
   background-size: cover;
 }
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -85%);
+}

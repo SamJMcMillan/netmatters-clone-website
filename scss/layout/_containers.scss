@@ -10,11 +10,11 @@
 
 .review {
   position: relative;
-  color: #ddd;
+  color: #fff;
 }
 
 .review::before {
   @include fixed-section;
-  background-color: #333645;
+  background-color: $color-primary;
   z-index: -1;
 }

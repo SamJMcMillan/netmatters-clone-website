@@ -2,3 +2,90 @@
   @include box-style;
   text-align: center;
 }
+
+.c-1 {
+  span .fa-circle {
+    color: $c-1-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-1-col;
+  }
+  :hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: $c-1-col;
+    .fa-inverse {
+      color: $c-1-col;
+    }
+    .fa-circle {
+      color: #fff;
+    }
+    a {
+      color: $c-1-col;
+      background-color: #fff;
+    }
+    top: -10px;
+    transition: 0.5s ease;
+  }
+}
+
+.c-2 {
+  span .fa-circle {
+    color: $c-2-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-2-col;
+  }
+}
+
+.c-3 {
+  span .fa-circle {
+    color: $c-3-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-3-col;
+  }
+}
+
+.c-4 {
+  span .fa-circle {
+    color: $c-4-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-4-col;
+  }
+}
+
+.c-5 {
+  span .fa-circle {
+    color: $c-5-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-5-col;
+  }
+}
+
+.c-6 {
+  span .fa-circle {
+    color: $c-6-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-6-col;
+  }
+}
+
+.c-7 {
+  span .fa-circle {
+    color: $c-7-col;
+  }
+  a {
+    @include button-default;
+    background-color: $c-7-col;
+  }
+}

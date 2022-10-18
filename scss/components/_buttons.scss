@@ -1,5 +1,30 @@
 // - Buttons ---------- //
 
+header button {
+  @include button-default;
+  background-color: $c-1-col;
+  width: 200px;
+  height: 60px;
+}
+
+.read-more {
+  @include button-default;
+  background-color: $color-darker;
+  width: 200px;
+  height: 60px;
+}
+
+.newsletter button {
+  @include button-default;
+  background-color: $color-primary;
+}
+
+.review-buttons button {
+  @include button-default;
+  margin-right: 10px;
+  height: 60px;
+}
+
 // - Input Bars ------- //
 
 .form-control {

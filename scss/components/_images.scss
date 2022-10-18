@@ -1,0 +1,15 @@
+// - Sponsor Logos ---------- //
+
+.sponsors-list {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.sponsors-list .sponsor {
+  flex-grow: 1;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  font-size: 0.875rem;
+}
