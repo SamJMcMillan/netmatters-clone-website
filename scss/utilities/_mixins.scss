@@ -4,3 +4,13 @@
   background-color: #fff;
   border: gray 0.5px solid;
 }
+
+@mixin fixed-section {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+}

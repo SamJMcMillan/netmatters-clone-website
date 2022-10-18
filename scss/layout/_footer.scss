@@ -1,0 +1,20 @@
+footer {
+  position: relative;
+  color: #fff;
+  background-color: #333645;
+  padding: 2em;
+}
+
+footer:before {
+  @include fixed-section;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-list a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
