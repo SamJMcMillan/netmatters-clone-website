@@ -27,3 +27,10 @@
   border: none;
   color: #fff;
 }
+
+@mixin b-box {
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}

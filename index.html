@@ -11,16 +11,17 @@
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
-    <title>
-      Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk |
-      Netmatters
-    </title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <title>
+      Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk |
+      Netmatters
+    </title>
+
     <script
       src="https://kit.fontawesome.com/65566a4b6d.js"
       crossorigin="anonymous"
@@ -35,7 +36,7 @@
             <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
               <div class="logo-container">
                 <a class="logo" href="#">
-                  <img src="../../images/f-logo.png">
+                  <img src="../../images/f-logo.png" />
                 </a>
               </div>
             </div>
@@ -50,13 +51,24 @@
               </div>
               <div class="hidden-xs pull-left search-form-wrapper--tablet">
                 <form class="d-flex col-lg-6">
-                  <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
+                  <input
+                    class="form-control search-bar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
                   <button type="submit">
                     <i class="fa-solid fa-magnifying-glass search-btn"></i>
                   </button>
                 </form>
               </div>
             </div>
+            <div class="btn btn-primary hamburger hamburger--spin">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -517,19 +529,59 @@
     </div>
     <!-- /Latest news section -->
     <!-- Sponsors -->
-    <div class="container sponsors-list">
-      <div class="row">
-        <div class="col-lg-3 sponsor">
-          <img src="images/sponsors/busseys-bw.jpg" />
-        </div>
-        <div class="col-lg-3 sponsor">
-          <img src="images/sponsors/crane-bw.jpg" />
-        </div>
-        <div class="col-lg-3 sponsor">
-          <img src="images/sponsors/beat-bw.jpg" />
-        </div>
-        <div class="col-lg-3 sponsor">
-          <img src="images/sponsors/northern-bw.jpg" />
+    <div>
+      <div class="cms-block">
+        <div class="container d-flex sponsors-list hidden-xs">
+          <div class="row">
+            <div class="col-lg-3 sponsor">
+              <img
+                class="coloured"
+                alt="Busseys Logo"
+                src="images/sponsors/busseys-col.png"
+              />
+              <img
+                class="greyscale"
+                alt="Busseys Logo"
+                src="images/sponsors/busseys-bw.jpg"
+              />
+            </div>
+            <div class="col-lg-3 sponsor">
+              <img
+                class="coloured"
+                alt="Crane Garden Buildings Logo"
+                src="images/sponsors/crane-col.png"
+              />
+              <img
+                class="greyscale"
+                alt="Crane Garden Buildings Logo"
+                src="images/sponsors/crane-bw.jpg"
+              />
+            </div>
+            <div class="col-lg-3 sponsor">
+              <img
+                class="coloured"
+                alt="Beat Logo"
+                src="images/sponsors/beat-col.png"
+              />
+              <img
+                class="greyscale"
+                alt="Beat Logo"
+                src="images/sponsors/beat-bw.jpg"
+              />
+            </div>
+            <div class="col-lg-3 sponsor">
+              <img
+                class="coloured"
+                alt="Northern Diver Logo"
+                src="images/sponsors/northern-col.png"
+              />
+              <img
+                class="greyscale"
+                alt="Northern Diver Logo"
+                src="images/sponsors/northern-bw.jpg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -548,7 +600,7 @@
               >
               <input
                 type="email"
-                class="form-control"
+                class="form-control rounded-0"
                 id="exampleInputEmail1"
               />
             </div>
@@ -560,7 +612,7 @@
               >
               <input
                 type="email"
-                class="form-control"
+                class="form-control rounded-0"
                 id="exampleInputEmail1"
               />
             </div>
@@ -582,7 +634,7 @@
               </label>
             </div>
           </div>
-          <div class="row float-start col-lg-2 mt-3 mb-5">
+          <div class="float-start mt-3 mb-5">
             <button h5><strong>Subscribe</strong></button>
           </div>
         </div>
@@ -653,12 +705,22 @@
           </div>
         </div>
         <hr />
-        <h6>
-          <small>
-            &copy; Copyright Netmatters 2022. All rights reserved. -
-            <a href="a">Sitemap</a></small
-          >
-        </h6>
+        <div class="bottom">
+          <div class="license float-start">
+            <h6>
+              <small>
+                &copy; Copyright Netmatters 2022. All rights reserved. -
+                <a href="a">Sitemap</a></small
+              >
+            </h6>
+          </div>
+          <div class="socials float-end">
+            <a href="#"><i class="fa-brands fa-facebook-f px-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter px-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram px-2"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in px-2"></i></a>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- /Footer -->

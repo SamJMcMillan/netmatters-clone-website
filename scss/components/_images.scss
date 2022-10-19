@@ -1,15 +1,26 @@
 // - Sponsor Logos ---------- //
 
+cms-block {
+  @include b-box;
+}
+
 .sponsors-list {
-  position: relative;
   display: flex;
-  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  flex-direction: row;
+  text-align: center;
+  @include b-box;
+}
+
+.coloured {
+  display: none;
 }
 
 .sponsors-list .sponsor {
   flex-grow: 1;
   padding: 0 20px;
   position: relative;
-  text-align: center;
-  font-size: 0.875rem;
+  height: auto;
 }
