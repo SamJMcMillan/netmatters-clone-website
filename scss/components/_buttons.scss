@@ -5,6 +5,10 @@ header button {
   background-color: $c-1-col;
   width: 200px;
   height: 60px;
+  &:hover,
+  &:focus {
+    background-color: darken($c-1-col, 10%);
+  }
 }
 
 .read-more {
@@ -12,17 +16,42 @@ header button {
   background-color: $color-darker;
   width: 200px;
   height: 60px;
+  &:hover,
+  &:focus {
+    background-color: darken($color-darker, 10%);
+  }
+}
+
+.g-reviews {
+  @include button-default;
+  background-color: $c-2-col;
+  width: 250px;
+  height: 60px;
+  margin-right: 15px;
+  &:hover,
+  &:focus {
+    background-color: darken($c-2-col, 10%);
+  }
+}
+
+.t-reviews {
+  @include button-default;
+  background-color: $c-3-col;
+  width: 250px;
+  height: 60px;
+  &:hover,
+  &:focus {
+    background-color: darken($c-3-col, 10%);
+  }
 }
 
 .newsletter button {
   @include button-default;
   background-color: $color-primary;
-}
-
-.review-buttons button {
-  @include button-default;
-  margin-right: 10px;
-  height: 60px;
+  &:hover,
+  &:focus {
+    background-color: darken($color-primary, 10%);
+  }
 }
 
 // - Input Bars ------- //

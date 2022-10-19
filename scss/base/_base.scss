@@ -14,6 +14,18 @@ body {
   color: $color-primary;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    &:focus {
+      text-decoration: underline;
+      color: black;
+    }
+  }
 }
 
 header {

@@ -1,20 +1,27 @@
-.newsletter {
-  position: relative;
-}
-
-.newsletter:before {
-  @include fixed-section;
-  background: #ddd;
-  z-index: -1;
-}
-
 .review {
   position: relative;
   color: #fff;
+  &::before {
+    @include fixed-section;
+    background-color: $color-primary;
+    z-index: -1;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
-.review::before {
-  @include fixed-section;
-  background-color: $color-primary;
-  z-index: -1;
+.newsletter {
+  position: relative;
+  &::before {
+    @include fixed-section;
+    background: #ddd;
+    z-index: -1;
+  }
+  a {
+    color: #fff;
+  }
 }
