@@ -89,3 +89,13 @@
     background-color: $c-7-col;
   }
 }
+
+.n-1,
+.n-2,
+.n-3 {
+  &:hover {
+    cursor: pointer;
+    top: -10px;
+    transition: 0.5s;
+  }
+}

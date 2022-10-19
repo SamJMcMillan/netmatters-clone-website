@@ -28,49 +28,156 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <div class="sticky-top slideDown">
-      <div class="top-nav">
-        <div class="container-md">
-          <div class="row justify-content-between">
-            <div class="col-9 nav-gap">
-              <a class="navbar-brand" href="#">
-                <img src="images/f-logo.png" />
-              </a>
-            </div>
-            <div class="row col-2 align-items-center justify-content-end">
-              <div
-                class="col-8 d-none d-lg-flex text-center align-items-center justify-content-end nav-gap"
-              >
-                <a
-                  class="btn support-button inner-height d-inline-flex"
-                  href="#"
-                  >Support</a
-                >
-                <a
-                  class="btn support-button inner-height d-inline-flex"
-                  href="#"
-                  >Contact</a
-                >
+    <nav>
+      <div class="inner">
+        <div class="container">
+          <div class="row inner-row">
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+              <div class="logo-container">
+                <a class="logo" href="#">
+                  <img src="../../images/f-logo.png">
+                </a>
               </div>
-              <div class="d-none d-md-block col-10">
-                <form class="d-flex">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+              <div class="actions">
+                <button type="button" class="spt">
+                  <i class="fa-solid fa-computer-mouse"></i> Support
+                </button>
+                <button type="button" class="cont">
+                  <i class="fa-solid fa-paper-plane"></i> Contact
+                </button>
+              </div>
+              <div class="hidden-xs pull-left search-form-wrapper--tablet">
+                <form class="d-flex col-lg-6">
+                  <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
+                  <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass search-btn"></i>
                   </button>
                 </form>
               </div>
             </div>
-          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /Nav Bar -->
+    <!-- Sidebar -->
+    <div class="container">
+      <div class="sidebar">
+        <div class="main visible-xs visible-sm">
+          <ul>
+            <li class="side-head">
+              <a href="#">Services</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Bespoke Software</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">IT Support</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Digital Marketing</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Telecoms Services</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Web Design</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Cyber Security</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Our Knowledge</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Technologies</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">News</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Insights</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Training</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Train for a Career in Tech</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Skills Bootcamp</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">SCS Frequently Asked Questions</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Scion Collaborators</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Events</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Business Automation Seminar</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Our Company</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Our Culture</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Our Careers</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Our Benefits</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">IT Support Great Yarmouth</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Our Work</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Case Studies</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-head">
+              <a href="#">Covid Risk Assessments</a>
+            </li>
+            <li class="side-head">
+              <a href="#">Contact Us</a>
+              <ul>
+                <li class="side-second">
+                  <a href="#">Cambridge Office</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Wymondham Office</a>
+                </li>
+                <li class="side-second">
+                  <a href="#">Great Yarmouth Office</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- /Nav Bar -->
+    <!-- /Sidebar -->
     <!-- Hero Image -->
     <header>
       <div class="mt-4 p-5 text-white hero-image">
@@ -85,7 +192,9 @@
             Perfomance-driven digital and technology services with<br />
             complete transparency.
           </h3>
-          <button class="mt-5"><strong>Contact us &#8594;</strong></button>
+          <button class="mt-5">
+            <strong>Contact us <i class="fa-solid fa-arrow-right"></i> </strong>
+          </button>
         </div>
       </div>
     </header>
@@ -99,7 +208,9 @@
           </h2>
         </div>
         <div class="col-lg-6">
-          <h2 class="float-end"><a href="#">View All &#8594;</a></h2>
+          <h2 class="float-end">
+            <a href="#">View All <i class="fa-solid fa-arrow-right"></i> </a>
+          </h2>
         </div>
       </div>
       <div class="row">
@@ -268,7 +379,7 @@
             our relationship in an upfront manner.
           </p>
           <button class="mb-5 read-more">
-            <strong>Read More &#8594;</strong>
+            <strong>Read More <i class="fa-solid fa-arrow-right"></i> </strong>
           </button>
         </section>
         <section class="col-lg-6 mt-5 h-100">
@@ -294,10 +405,14 @@
           <p>Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</p>
           <div class="inline mt-3 mb-5 review-buttons">
             <button class="g-reviews">
-              <strong>Google Reviews &#8594;</strong>
+              <strong
+                >Google Reviews <i class="fa-solid fa-arrow-right"></i>
+              </strong>
             </button>
             <button class="t-reviews">
-              <strong>Trustpilot Reviews &#8594;</strong>
+              <strong
+                >Trustpilot Reviews <i class="fa-solid fa-arrow-right"></i>
+              </strong>
             </button>
           </div>
         </section>
@@ -313,12 +428,14 @@
           </h2>
         </div>
         <div class="col-lg-6">
-          <h2 class="float-end"><a href="#">View All &#8594;</a></h2>
+          <h2 class="float-end">
+            <a href="#">View All <i class="fa-solid fa-arrow-right"></i> </a>
+          </h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 gy-4">
-          <div class="card text-start rounded-3 h-100">
+          <div class="card text-start rounded-0 h-100 n-1">
             <img src="images/news-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Off-The-Shelf vs Bespoke Software</h5>
@@ -343,7 +460,7 @@
           </div>
         </div>
         <div class="col-lg-4 gy-4">
-          <div class="card text-start rounded-3 h-100">
+          <div class="card text-start rounded-0 h-100 n-2">
             <img src="images/news-2.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
@@ -370,7 +487,7 @@
           </div>
         </div>
         <div class="col-lg-4 gy-4">
-          <div class="card text-start rounded-3 h-100">
+          <div class="card text-start rounded-0 h-100 n-3">
             <img src="images/news-3.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">

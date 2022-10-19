@@ -1,5 +1,33 @@
 // - Buttons ---------- //
 
+.spt {
+  @include button-default;
+  background-color: $c-2-col;
+  border-radius: 2px;
+}
+
+.cont {
+  @include button-default;
+  background-color: $c-1-col;
+  border-radius: 2px;
+}
+
+.search-bar {
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  outline: none;
+  padding: 15px 20px 3px;
+  height: 56px;
+  font-size: 1.7rem;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  vertical-align: bottom;
+  background-color: $c-1-col;
+  color: #fff;
+}
+
 header button {
   @include button-default;
   background-color: $c-1-col;
@@ -58,4 +86,14 @@ header button {
 
 .form-control {
   border-radius: 0%;
+}
+
+// - Media Queries --- //
+
+@media (min-width: 1260px) {
+  .form-control {
+    display: inline-block !important;
+    border-radius: 0;
+    width: 240px;
+  }
 }
