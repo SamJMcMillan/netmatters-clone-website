@@ -90,6 +90,26 @@
   }
 }
 
+// - Latest News Cards -- //
+
+.user {
+  @include b-box;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  display: table;
+  .avatar {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .user-info {
+    padding-left: 20px;
+    line-height: 1.375rem;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 .n-1,
 .n-2,
 .n-3 {

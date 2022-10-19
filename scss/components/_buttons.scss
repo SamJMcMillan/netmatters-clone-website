@@ -73,6 +73,21 @@ header button {
   }
 }
 
+.n-1 button {
+  @include button-default;
+  background-color: $c-1-col;
+}
+
+.n-2 button {
+  @include button-default;
+  background-color: $c-3-col;
+}
+
+.n-3 button {
+  @include button-default;
+  background-color: $c-1-col;
+}
+
 .newsletter button {
   @include button-default;
   @include b-box;
