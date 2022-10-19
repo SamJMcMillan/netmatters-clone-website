@@ -3,15 +3,24 @@ footer {
   color: #fff;
   background-color: #333645;
   padding: 2em;
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  h5 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
 }
 
-footer:before {
-  @include fixed-section;
-}
-
-.footer-list a {
-  text-decoration: none;
-  color: #fff;
+.footer-list {
   margin: 0;
   padding: 0;
 }
