@@ -13,17 +13,11 @@ nav .col-lg-4 {
 
 .inner {
   padding: 20px 0;
-  @include b-box;
-}
-
-.logo-container {
-  @include b-box;
 }
 
 .actions {
   float: right;
   padding: 7px 0;
-  @include b-box;
 }
 
 .hamburger {
@@ -38,7 +32,6 @@ nav .col-lg-4 {
   width: 33px;
   height: 19px;
   position: relative;
-  @include b-box;
 }
 
 .hamburger-inner {

@@ -25,3 +25,8 @@
     color: #fff;
   }
 }
+
+label .required::after {
+  content: " *";
+  color: red;
+}
