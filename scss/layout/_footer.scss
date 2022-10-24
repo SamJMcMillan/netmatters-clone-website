@@ -24,3 +24,9 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: $bpoint-sm) {
+  footer {
+    font-size: smaller;
+  }
+}

@@ -12,8 +12,8 @@ nav .col-lg-4 {
   flex-grow: 1;
 }
 
-.inner {
-  padding: 30px 300px;
+.logo {
+  float: left;
 }
 
 .actions {
@@ -38,9 +38,39 @@ nav .col-lg-4 {
 .navbar-nav {
   flex-grow: 1;
   text-transform: uppercase;
+  li a {
+    color: #fff;
+    .fa-box-open {
+      color: $c-1-col;
+    }
+    .fa-desktop {
+      color: $c-2-col;
+    }
+    .fa-chart-simple {
+      color: $c-3-col;
+    }
+    .fa-phone {
+      color: $c-4-col;
+    }
+    .fa-code {
+      color: $c-5-col;
+    }
+    .fa-shield-halved {
+      color: $c-6-col;
+    }
+    .fa-graduation-cap {
+      color: $c-7-col;
+    }
+  }
 }
 
 // - Media Queries ---------- //
+
+@media (min-width: $bpoint-md) {
+  .phone-btn {
+    display: none;
+  }
+}
 
 @media (min-width: $bpoint-lg) {
   .navbar-nav {
@@ -49,6 +79,19 @@ nav .col-lg-4 {
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
+  }
+  .inner {
+    padding: 30px 300px;
+  }
+}
+
+@media (max-width: $bpoint-lg) {
+  .spt,
+  .cont {
+    display: none;
+  }
+  .navbar-nav {
+    display: none;
   }
 }

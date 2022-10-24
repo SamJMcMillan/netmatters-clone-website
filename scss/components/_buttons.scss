@@ -18,6 +18,13 @@
   border-radius: 5px 0 0 5px;
 }
 
+.phone-btn {
+  @include button-default(#fff);
+  color: $color-darker;
+  font-size: 32px;
+  padding-right: 25px;
+}
+
 .search-btn {
   outline: none;
   padding: 15px 20px 3px;
@@ -35,8 +42,6 @@
   @include button-default($color-primary);
   float: right;
   translate: 0 8px;
-  font-size: 30px;
-  padding: 10px 15px;
 }
 
 // - Reviews --------- //
@@ -90,3 +95,9 @@
 }
 
 // - Media Queries --- //
+
+@media (min-width: $bpoint-md) {
+  .hamburger {
+    padding: 10px 20px;
+  }
+}

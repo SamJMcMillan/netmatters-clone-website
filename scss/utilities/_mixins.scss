@@ -2,7 +2,7 @@
 
 @mixin box-style {
   background-color: #fff;
-  border: $color-secondary 0.5px solid;
+  border: $color-secondary 0.2px solid;
   box-shadow: $card-shadow;
 }
 
@@ -32,6 +32,13 @@
   &:focus {
     background-color: darken($color, 10%);
   }
+}
+
+@mixin rounded($size) {
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+  @content;
 }
 
 @mixin b-box {

@@ -3,85 +3,60 @@
   text-align: center;
 }
 
-.c-1 {
-  span .fa-circle {
-    color: $c-1-col;
+// - Service Card Mixin -------------- //
+
+@mixin card-hover-default($color) {
+  .fa-inverse {
+    @include rounded(65px);
+    font-size: 30px;
+    line-height: 65px;
+    translate: 10px 0;
+    color: #fff;
+    background-color: $color;
   }
-  a {
-    @include button-default($c-1-col);
+  button {
+    @include button-default($color);
   }
   :hover {
     cursor: pointer;
     color: #fff;
-    background-color: $c-1-col;
+    background-color: $color;
+
     .fa-inverse {
-      color: $c-1-col;
-    }
-    // .fa-circle {
-    //   color: #fff;
-    // }
-    a {
-      color: $c-1-col;
+      color: $color !important;
       background-color: #fff;
     }
-    // top: -10px;
-    // transition: 0.5s ease;
+    button {
+      color: $color;
+      background-color: #fff;
+    }
   }
 }
+// - !Service Card Mixin ------------- //
 
+// - Service Cards ------------------ //
+.c-1 {
+  @include card-hover-default($c-1-col);
+}
 .c-2 {
-  span .fa-circle {
-    color: $c-2-col;
-  }
-  a {
-    @include button-default($c-2-col);
-  }
+  @include card-hover-default($c-2-col);
 }
-
 .c-3 {
-  span .fa-circle {
-    color: $c-3-col;
-  }
-  a {
-    @include button-default($c-3-col);
-  }
+  @include card-hover-default($c-3-col);
 }
-
 .c-4 {
-  span .fa-circle {
-    color: $c-4-col;
-  }
-  a {
-    @include button-default($c-4-col);
-  }
+  @include card-hover-default($c-4-col);
 }
-
 .c-5 {
-  span .fa-circle {
-    color: $c-5-col;
-  }
-  a {
-    @include button-default($c-5-col);
-  }
+  @include card-hover-default($c-5-col);
 }
-
 .c-6 {
-  span .fa-circle {
-    color: $c-6-col;
-  }
-  a {
-    @include button-default($c-6-col);
-  }
+  @include card-hover-default($c-6-col);
 }
-
 .c-7 {
-  span .fa-circle {
-    color: $c-7-col;
-  }
-  a {
-    @include button-default($c-7-col);
-  }
+  @include card-hover-default($c-7-col);
 }
+// - !Service Cards ----------------- //
 
 // - Latest News Cards -- //
 
@@ -105,6 +80,7 @@
 .n-1,
 .n-2,
 .n-3 {
+  border-radius: 6px 6px 0 0;
   &:hover {
     cursor: pointer;
     top: -10px;
