@@ -1,15 +1,17 @@
 // - Buttons ---------- //
 
+// - Navbar ---------- //
+
 .spt {
-  @include button-default;
-  background-color: $c-2-col;
+  @include button-default($c-2-col);
   border-radius: 2px;
+  padding: 10px 20px;
 }
 
 .cont {
-  @include button-default;
-  background-color: $c-1-col;
+  @include button-default($c-1-col);
   border-radius: 2px;
+  padding: 10px 20px;
 }
 
 .search-bar {
@@ -21,6 +23,7 @@
   padding: 15px 20px 3px;
   height: 56px;
   font-size: 1.7rem;
+  line-height: 5px;
   border-radius: 0 3px 3px 0;
   border: none;
   vertical-align: bottom;
@@ -28,31 +31,24 @@
   color: #fff;
 }
 
-header button {
-  @include button-default;
-  background-color: $c-1-col;
-  width: 200px;
-  height: 60px;
-  &:hover,
-  &:focus {
-    background-color: darken($c-1-col, 10%);
-  }
+.hamburger {
+  @include button-default($color-primary);
+  float: right;
+  translate: 0 8px;
+  font-size: 30px;
+  padding: 10px 15px;
 }
 
+// - Reviews --------- //
+
 .read-more {
-  @include button-default;
-  background-color: $color-darker;
+  @include button-default($color-darker);
   width: 200px;
   height: 60px;
-  &:hover,
-  &:focus {
-    background-color: darken($color-darker, 10%);
-  }
 }
 
 .g-reviews {
-  @include button-default;
-  background-color: $c-2-col;
+  @include button-default($c-2-col);
   width: 250px;
   height: 60px;
   margin-right: 15px;
@@ -63,8 +59,7 @@ header button {
 }
 
 .t-reviews {
-  @include button-default;
-  background-color: $c-3-col;
+  @include button-default($c-3-col);
   width: 250px;
   height: 60px;
   &:hover,
@@ -73,24 +68,19 @@ header button {
   }
 }
 
-.n-1 button {
-  @include button-default;
-  background-color: $c-1-col;
+// - News ---------- //
+
+.n-1 button,
+.n-3 button {
+  @include button-default($c-1-col);
 }
 
 .n-2 button {
-  @include button-default;
-  background-color: $c-3-col;
-}
-
-.n-3 button {
-  @include button-default;
-  background-color: $c-1-col;
+  @include button-default($c-3-col);
 }
 
 .newsletter button {
-  @include button-default;
-  background-color: $color-primary;
+  @include button-default($color-primary);
 }
 
 // - Forms ----------- .//
@@ -100,11 +90,3 @@ header button {
 }
 
 // - Media Queries --- //
-
-@media (min-width: 1260px) {
-  .form-control {
-    display: inline-block !important;
-    border-radius: 0;
-    width: 240px;
-  }
-}

@@ -16,16 +16,22 @@
   width: 100vw;
 }
 
-@mixin button-default {
+@mixin button-default($color) {
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.063rem;
   border-radius: 3px;
   white-space: normal;
   border: none;
+  background-color: $color;
   color: #fff;
+  &:hover,
+  &:focus {
+    background-color: darken($color, 10%);
+  }
 }
 
 @mixin b-box {

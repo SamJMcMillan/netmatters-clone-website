@@ -2,17 +2,18 @@
   background-color: #fff;
 }
 
-.inner-row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
 nav .col-lg-4 {
   width: 33.33333333%;
 }
 
+.inner-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
 .inner {
-  padding: 20px 0;
+  padding: 30px 300px;
 }
 
 .actions {
@@ -20,21 +21,34 @@ nav .col-lg-4 {
   padding: 7px 0;
 }
 
-.hamburger {
-  height: 56px;
-  line-height: 46px;
-  font-size: 1.125rem;
-  float: left;
+.form-inline {
+  float: right;
+  border: 1px solid $color-secondary;
+  border-radius: 0 5px 5px 0;
+  line-height: 50px;
+  padding-left: 20px;
+  box-shadow: inset $card-shadow;
 }
 
-.hamburger-box {
-  display: block;
-  width: 33px;
-  height: 19px;
-  position: relative;
+.outer-row {
+  background-color: $color-primary;
+  color: #fff;
 }
 
-.hamburger-inner {
-  background-color: #fff;
-  border-radius: 0;
+.navbar-nav {
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+// - Media Queries ---------- //
+
+@media (min-width: $bpoint-lg) {
+  .navbar-nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
 }

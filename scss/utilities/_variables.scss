@@ -17,4 +17,12 @@ $c-6-col: #f62459;
 $c-7-col: #ce4125;
 
 // - Fonts -------------- //
-$font-main: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+$font-main: "Work Sans", sans-serif;
+
+// - Breakpoints ------- //
+$bpoint-xs: 387px;
+$bpoint-sm: 600px;
+$bpoint-md: 768px;
+$bpoint-lg: 992px;
+$bpoint-xl: 1200px;

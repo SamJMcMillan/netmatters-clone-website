@@ -2,45 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/style.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <title>
-      Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk |
-      Netmatters
-    </title>
-
+    <link href="css/style.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/65566a4b6d.js"
       crossorigin="anonymous"
     ></script>
+    <title>
+      Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk |
+      Netmatters
+    </title>
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav>
-      <div class="inner">
-        <div class="container">
+    <header>
+      <div class="inner d-flex">
+        <div class="container-fluid">
           <div class="row inner-row">
-            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+            <div class="col-lg-4 justify-content-start">
               <div class="logo-container">
                 <a class="logo" href="#">
                   <img src="../../images/f-logo.png" />
                 </a>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+            <div class="col-lg-8 d-inline-flex">
               <div class="actions">
                 <button type="button" class="spt">
                   <i class="fa-solid fa-computer-mouse"></i> Support
@@ -48,29 +42,66 @@
                 <button type="button" class="cont">
                   <i class="fa-solid fa-paper-plane"></i> Contact
                 </button>
-              </div>
-              <div class="hidden-xs pull-left search-form-wrapper--tablet">
-                <form class="d-flex col-lg-6">
-                  <input
-                    class="form-control search-bar"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass search-btn"></i>
-                  </button>
+                <form class="form-inline mx-4">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="search-bar"
+                      placeholder="Search..."
+                    />
+                    <button type="submit" class="search-btn">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
                 </form>
               </div>
-            </div>
-            <div class="btn btn-primary hamburger hamburger--spin">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
+              <div>
+                <button class="hamburger">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
+    <nav class="row outer-row d-flex">
+      <ul class="navbar-nav">
+        <li>
+          <i class="fa-solid fa-box-open fa-inverse"></i><br /><small
+            >Bespoke</small
+          ><br />Software
+        </li>
+        <li>
+          <i class="fa-sharp fa-solid fa-desktop fa-inverse"></i><br /><small
+            >IT</small
+          ><br />Support
+        </li>
+        <li>
+          <i class="fa-solid fa-chart-simple fa-inverse"></i><br /><small
+            >Digital</small
+          ><br />Marketing
+        </li>
+        <li>
+          <i class="fa-solid fa-phone fa-inverse"></i><br /><small
+            >Telecoms</small
+          ><br />Services
+        </li>
+        <li>
+          <i class="fa-solid fa-code fa-inverse"></i><br /><small>Web</small
+          ><br />Design
+        </li>
+        <li>
+          <i class="fa-solid fa-shield-halved fa-inverse"></i><br /><small
+            >Cyber</small
+          ><br />Security
+        </li>
+        <li>
+          <i class="fa-solid fa-graduation-cap fa-inverse"></i><br /><small
+            >Developer</small
+          ><br />Course
+        </li>
+      </ul>
     </nav>
     <!-- /Nav Bar -->
     <!-- Sidebar -->
@@ -191,25 +222,23 @@
     </div>
     <!-- /Sidebar -->
     <!-- Hero Image -->
-    <header>
-      <div class="mt-4 p-5 text-white hero-image">
-        <div class="hero-text">
-          <h1 class="display-4">
-            <strong
-              >The East of England's Leading<br />
-              Technology Company</strong
-            >
-          </h1>
-          <h3>
-            Perfomance-driven digital and technology services with<br />
-            complete transparency.
-          </h3>
-          <button class="mt-5">
-            <strong>Contact us <i class="fa-solid fa-arrow-right"></i> </strong>
-          </button>
-        </div>
+    <div class="p-5 text-white hero-image">
+      <div class="hero-text">
+        <h1 class="display-4">
+          <strong
+            >The East of England's Leading<br />
+            Technology Company</strong
+          >
+        </h1>
+        <h3>
+          Perfomance-driven digital and technology services with<br />
+          complete transparency.
+        </h3>
+        <button class="mt-5 cont">
+          <strong>Contact us <i class="fa-solid fa-arrow-right"></i> </strong>
+        </button>
       </div>
-    </header>
+    </div>
     <!-- /Hero Image -->
     <!-- Service cards -->
     <div class="container my-4">
