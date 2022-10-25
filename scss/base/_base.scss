@@ -7,7 +7,7 @@ body {
   @include b-box;
   font-family: $font-main;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: $color-primary;
   letter-spacing: 0.4px;
   line-height: 1.42857143;
@@ -23,6 +23,12 @@ body {
       color: black;
     }
   }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
 }
 
 small {

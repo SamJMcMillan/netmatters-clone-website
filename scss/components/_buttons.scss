@@ -42,11 +42,12 @@
 
 .hamburger {
   @include button-default($color-primary);
-  translate: 0 8px;
 }
 
 .util-btns {
   float: right;
+  position: absolute;
+  right: 250px;
 }
 
 // - Reviews --------- //

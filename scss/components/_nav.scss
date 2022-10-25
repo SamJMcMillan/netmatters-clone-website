@@ -7,9 +7,9 @@
   flex-direction: row;
 }
 
-.logo {
-  min-width: 300px;
-  max-width: 400px;
+.inner {
+  padding: 20px !important;
+  margin: 0% !important;
 }
 
 .actions {
@@ -23,7 +23,11 @@
   line-height: 50px;
   padding-left: 20px;
   box-shadow: inset $card-shadow;
-  translate: 0 5px;
+}
+
+.form-inline,
+.util-btns {
+  translate: -100px -55px;
 }
 
 .outer-row {
@@ -92,7 +96,7 @@
   }
 }
 
-@media (max-width: $bpoint-md) {
+@media (max-width: $bpoint-xl) {
   .form-inline {
     display: none;
   }
