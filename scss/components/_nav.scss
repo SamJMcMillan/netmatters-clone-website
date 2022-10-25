@@ -2,10 +2,6 @@
   background-color: #fff;
 }
 
-nav .col-lg-4 {
-  width: 33.33333333%;
-}
-
 .inner-row {
   display: flex;
   flex-direction: row;
@@ -13,11 +9,11 @@ nav .col-lg-4 {
 }
 
 .logo {
-  float: left;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .actions {
-  float: right;
   padding: 7px 0;
 }
 

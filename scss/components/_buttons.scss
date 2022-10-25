@@ -2,16 +2,18 @@
 
 // - Navbar ---------- //
 
-.spt {
-  @include button-default($c-2-col);
+@mixin nav-btns($color) {
+  @include button-default($color);
   border-radius: 2px;
   padding: 10px 20px;
 }
 
+.spt {
+  @include nav-btns($c-2-col);
+}
+
 .cont {
-  @include button-default($c-1-col);
-  border-radius: 2px;
-  padding: 10px 20px;
+  @include nav-btns($c-1-col);
 }
 
 .search-bar {
@@ -40,8 +42,11 @@
 
 .hamburger {
   @include button-default($color-primary);
-  float: right;
   translate: 0 8px;
+}
+
+.util-btns {
+  float: right;
 }
 
 // - Reviews --------- //
@@ -52,25 +57,20 @@
   height: 60px;
 }
 
-.g-reviews {
-  @include button-default($c-2-col);
+@mixin review-btns($color) {
+  @include button-default($color);
   width: 250px;
   height: 60px;
+  @include button-default($color);
+}
+
+.g-reviews {
   margin-right: 15px;
-  &:hover,
-  &:focus {
-    background-color: darken($c-2-col, 10%);
-  }
+  @include review-btns($c-2-col);
 }
 
 .t-reviews {
-  @include button-default($c-3-col);
-  width: 250px;
-  height: 60px;
-  &:hover,
-  &:focus {
-    background-color: darken($c-3-col, 10%);
-  }
+  @include review-btns($c-3-col);
 }
 
 // - News ---------- //

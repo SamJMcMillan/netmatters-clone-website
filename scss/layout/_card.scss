@@ -87,3 +87,17 @@
     transition: 0.5s;
   }
 }
+
+// - Media Queries ------- //
+
+@media (min-width: $bpoint-md) {
+  .n-3 {
+    display: none;
+  }
+}
+
+@media (min-width: $bpoint-xl) {
+  .n-3 {
+    display: block;
+  }
+}

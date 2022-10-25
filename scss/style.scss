@@ -8,9 +8,7 @@
 @import "base/reset", "base/base";
 
 // - Layout Styles -------- //
-@import "layout/card", "layout/containers", "layout/footer", "layout/header",
-  "layout/sidebar";
+@import "layout/card", "layout/containers", "layout/footer", "layout/sidebar";
 
 // - Component Styles ----- //
-@import "components/buttons", "components/icons", "components/images",
-  "components/nav";
+@import "components/buttons", "components/images", "components/nav";
