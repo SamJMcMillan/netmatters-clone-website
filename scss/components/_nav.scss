@@ -28,6 +28,7 @@ nav .col-lg-4 {
   line-height: 50px;
   padding-left: 20px;
   box-shadow: inset $card-shadow;
+  translate: 0 5px;
 }
 
 .outer-row {
@@ -92,6 +93,12 @@ nav .col-lg-4 {
     display: none;
   }
   .navbar-nav {
+    display: none;
+  }
+}
+
+@media (max-width: $bpoint-xl) {
+  .form-inline {
     display: none;
   }
 }
