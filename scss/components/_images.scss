@@ -24,3 +24,11 @@ cms-block {
   position: relative;
   height: auto;
 }
+
+// - Media Queries --------- //
+@media (max-width: $bpoint-md) {
+  .carousel-list img,
+  .sponsor {
+    display: none;
+  }
+}

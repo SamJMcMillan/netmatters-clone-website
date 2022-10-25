@@ -1,3 +1,7 @@
+.bottom-view {
+  display: none;
+}
+
 .card {
   @include box-style;
   text-align: center;
@@ -98,6 +102,15 @@
 
 @media (min-width: $bpoint-xl) {
   .n-3 {
+    display: block;
+  }
+}
+
+@media (max-width: $bpoint-md) {
+  .top-view {
+    display: none;
+  }
+  .bottom-view {
     display: block;
   }
 }
