@@ -5,7 +5,6 @@
 .inner-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .inner {
@@ -53,8 +52,6 @@ header #search-desktop {
   @include search-style;
   display: flex;
   margin-top: 1rem;
-  justify-content: start;
-  max-width: 405px;
   @include media-query(medium) {
   }
   @include media-query(large) {

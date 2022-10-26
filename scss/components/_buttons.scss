@@ -45,22 +45,11 @@
   }
 }
 
-.m-search-btn {
-  @include media-query(medium) {
-    outline: none;
-    padding: 15px 20px 3px;
-    height: 56px;
-    font-size: 1.7rem;
-    line-height: 1px;
-    border: none;
-    vertical-align: bottom;
-    background-color: $c-1-col;
-    color: #fff;
-  }
+#search-mobile button {
+  position: relative !important;
 }
 
 .util-btns {
-  justify-content: end;
   translate: 0 5px;
 }
 
@@ -76,6 +65,7 @@
 
 .hamburger {
   @include button-default($color-primary);
+  justify-content: end;
   @include media-query(medium) {
     padding: 10px 20px;
   }
