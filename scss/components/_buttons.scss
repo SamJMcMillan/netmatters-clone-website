@@ -20,13 +20,6 @@
   border-radius: 5px 0 0 5px;
 }
 
-.phone-btn {
-  @include button-default(#fff);
-  color: $color-darker;
-  font-size: 32px;
-  padding-right: 25px;
-}
-
 .search-btn {
   outline: none;
   padding: 15px 20px 3px;
@@ -40,15 +33,26 @@
   color: #fff;
 }
 
+.util-btns {
+  justify-content: end;
+}
+
+.phone-btn {
+  @include button-default(#fff);
+  color: $color-darker;
+  font-size: 32px;
+  padding-right: 25px;
+}
+
 .hamburger {
   @include button-default($color-primary);
 }
 
-.util-btns {
-  float: right;
-  position: absolute;
-  right: 250px;
-}
+// .util-btns {
+//   float: right;
+//   position: absolute;
+//   right: 250px;
+// }
 
 // - Reviews --------- //
 

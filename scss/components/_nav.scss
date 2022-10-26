@@ -17,18 +17,19 @@
 }
 
 .form-inline {
-  float: right;
+  justify-content: end;
   border: 1px solid $color-secondary;
   border-radius: 0 5px 5px 0;
   line-height: 50px;
   padding-left: 20px;
   box-shadow: inset $card-shadow;
+  max-width: 411.9px;
 }
 
-.form-inline,
-.util-btns {
-  translate: -100px -55px;
-}
+// .form-inline,
+// .util-btns {
+//   translate: -100px -55px;
+// }
 
 .outer-row {
   background-color: $color-primary;
