@@ -27,45 +27,59 @@
       <div class="inner">
         <div class="container">
           <div class="row inner-row">
-            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+            <div class="col-xs-4 col-sm-6 col-md-5 col-lg-4">
               <a class="logo" href="#">
                 <img src="images/f-logo.png" alt="Netmatters Logo" />
               </a>
             </div>
             <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8">
-              <div class="actions">
+              <div class="actions d-flex">
                 <button type="button" class="spt">
                   <i class="fa-solid fa-computer-mouse"></i> Support
                 </button>
                 <button type="button" class="cont">
                   <i class="fa-solid fa-paper-plane"></i> Contact
                 </button>
-                <div>
-                  <form class="form-inline">
-                    <div class="search">
-                      <input
-                        type="text"
-                        class="search-bar"
-                        placeholder="Search..."
-                      />
-                      <button type="submit" class="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <div class="util-btns d-inline-flex">
-                  <button class="phone-btn">
-                    <i class="fa-solid fa-phone"></i>
-                  </button>
-                  <div>
-                    <button class="hamburger">
-                      <i class="fa-solid fa-bars"></i>
+              </div>
+              <div>
+                <form id="search-desktop" class="mx-4">
+                  <div class="search d-flex">
+                    <input
+                      type="text"
+                      class="search-bar"
+                      placeholder="Search..."
+                    />
+                    <button type="submit" class="search-btn">
+                      <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                   </div>
+                </form>
+              </div>
+              <div class="util-btns d-inline-flex">
+                <button class="phone-btn">
+                  <i class="fa-solid fa-phone"></i>
+                </button>
+                <div>
+                  <button class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row d-flex">
+            <form id="search-mobile">
+              <div class="m-search d-flex">
+                <input
+                  type="text"
+                  class="m-search-bar"
+                  placeholder="Search..."
+                />
+                <button type="submit" class="m-search-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -321,7 +335,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row bottom-service">
           <div class="col-lg-3 col-md-6 gy-4 c-4">
             <div class="card h-100">
               <span class="fa-stack fa-2x align-self-center s-card mt-5">

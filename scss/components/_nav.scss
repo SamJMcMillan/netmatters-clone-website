@@ -5,31 +5,70 @@
 .inner-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .inner {
   padding: 20px !important;
   margin: 0% !important;
+  @include media-query(large) {
+    padding: 30px 300px;
+  }
+}
+
+header #search-desktop {
+  display: none;
+  @include media-query(large) {
+    display: block;
+    border-radius: 3px;
+  }
+}
+
+.col-xs-3 {
+  display: flex;
+  flex-direction: row;
 }
 
 .actions {
   padding: 7px 0;
 }
 
-.form-inline {
-  justify-content: end;
+@mixin search-style {
   border: 1px solid $color-secondary;
-  border-radius: 0 5px 5px 0;
   line-height: 50px;
   padding-left: 20px;
   box-shadow: inset $card-shadow;
-  max-width: 411.9px;
 }
 
-// .form-inline,
-// .util-btns {
-//   translate: -100px -55px;
-// }
+#search-desktop {
+  justify-content: end;
+  translate: 0 5px;
+  @include media-query(x-large) {
+    border-radius: 0 5px 5px 0;
+    @include search-style;
+  }
+}
+
+#search-mobile {
+  @include search-style;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: start;
+  max-width: 405px;
+  @include media-query(medium) {
+  }
+  @include media-query(large) {
+    display: none;
+  }
+}
+
+.search-bar {
+  border-radius: 5px 0 0 5px;
+  display: none;
+  @include media-query(x-large) {
+    display: inline;
+  }
+}
 
 .outer-row {
   background-color: $color-primary;
@@ -37,6 +76,7 @@
 }
 
 .navbar-nav {
+  display: none;
   flex-grow: 1;
   text-transform: uppercase;
   li a {
@@ -63,42 +103,12 @@
       color: $c-7-col;
     }
   }
-}
-
-// - Media Queries ---------- //
-
-@media (min-width: $bpoint-md) {
-  .phone-btn {
-    display: none;
-  }
-}
-
-@media (min-width: $bpoint-lg) {
-  .navbar-nav {
+  @include media-query(large) {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
     padding: 20px 10px;
-  }
-  .inner {
-    padding: 30px 300px;
-  }
-}
-
-@media (max-width: $bpoint-lg) {
-  .spt,
-  .cont {
-    display: none;
-  }
-  .navbar-nav {
-    display: none;
-  }
-}
-
-@media (max-width: $bpoint-xl) {
-  .form-inline {
-    display: none;
   }
 }
