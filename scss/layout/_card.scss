@@ -82,6 +82,28 @@
   }
 }
 
+.news-tag {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: end;
+  z-index: 1;
+  small {
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 10px;
+  }
+  .t-1,
+  .t-3 {
+    background-color: $c-1-col;
+  }
+  .t-2 {
+    background-color: $c-3-col;
+  }
+}
+
 .n-1,
 .n-2,
 .n-3 {

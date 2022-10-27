@@ -2,6 +2,12 @@
   background-color: #fff;
 }
 
+header .container {
+  @include media-query("x-large") {
+    display: flex;
+  }
+}
+
 .inner-row {
   display: flex;
   flex-direction: row;
@@ -50,7 +56,6 @@ header #search-desktop {
 
 #search-mobile {
   @include search-style;
-  display: flex;
   margin-top: 1rem;
   @include media-query(medium) {
   }
@@ -67,9 +72,27 @@ header #search-desktop {
   }
 }
 
+.m-search-bar {
+  width: 100%;
+}
+
 .outer-row {
   background-color: $color-primary;
   color: #fff;
+}
+
+@media (max-width: $bpoint-sm) {
+  .inner-row {
+    display: table;
+  }
+  header .col-xs-4 {
+    display: table-cell;
+    table-layout: fixed;
+  }
+  .util-btns {
+    display: table-cell;
+    padding: 0%;
+  }
 }
 
 .navbar-nav {
@@ -106,6 +129,6 @@ header #search-desktop {
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 150px;
   }
 }

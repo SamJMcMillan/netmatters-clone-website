@@ -36,7 +36,7 @@
   background-color: $c-1-col;
   color: #fff;
   display: none;
-  @include media-query(large) {
+  @include media-query(medium) {
     display: inline;
     border-radius: 3px;
   }
@@ -47,6 +47,7 @@
 
 #search-mobile button {
   position: relative !important;
+  padding: 0 20px;
 }
 
 .util-btns {
@@ -99,6 +100,7 @@
 
 .t-reviews {
   @include review-btns($c-3-col);
+  margin-top: 15px;
 }
 
 // - News ---------- //
