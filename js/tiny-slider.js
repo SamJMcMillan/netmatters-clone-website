@@ -1,3 +1,13 @@
+// Hero Image Slides
+var heroSlides = tns({
+  container: ".hero-slides",
+  mouseDrag: true,
+  controls: false,
+  autoplay: true,
+  speed: 400,
+  lazyload: true,
+});
+
 // Partner Slides
 var partnerSlider = tns({
   container: ".partner-slides",
@@ -8,5 +18,4 @@ var partnerSlider = tns({
   mouseDrag: true,
   swipeAngle: false,
   fixedWidth: 250,
-  speed: 200,
 });

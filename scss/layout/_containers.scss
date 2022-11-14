@@ -1,10 +1,52 @@
 // - Hero Image ---------- //
 
-.hero-image {
-  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.178), #000),
-    url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-oaVs.jpg");
-  height: 510px;
-  background-size: cover;
+.tns-outer button {
+  display: none;
+}
+// ^ This removes the autoplay button on the hero-slides, as the syntax
+// for it in the documentation is rather poor.
+
+.hero-image-1 {
+  @include hero-image("../../images/hero-images/hi1.jpg");
+  button {
+    background-color: $c-1-col;
+  }
+}
+.hero-image-2 {
+  @include hero-image("../../images/hero-images/hi2.jpg");
+  button {
+    background-color: $c-1-col;
+  }
+}
+.hero-image-3 {
+  @include hero-image("../../images/hero-images/hi3.jpg");
+  button {
+    background-color: $c-2-col;
+  }
+}
+.hero-image-4 {
+  @include hero-image("../../images/hero-images/hi4.jpg");
+  button {
+    background-color: $c-3-col;
+  }
+}
+.hero-image-5 {
+  @include hero-image("../../images/hero-images/hi5.jpg");
+  button {
+    background-color: $c-4-col;
+  }
+}
+.hero-image-6 {
+  @include hero-image("../../images/hero-images/hi6.jpg");
+  button {
+    background-color: $c-5-col;
+  }
+}
+.hero-image-7 {
+  @include hero-image("../../images/hero-images/hi7.jpg");
+  button {
+    background-color: $c-6-col;
+  }
 }
 
 .hero-text {

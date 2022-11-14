@@ -1,5 +1,12 @@
 // - Mixins ---------- //
 
+@mixin hero-image($image) {
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.178), #000),
+    url($image);
+  height: 510px;
+  background-size: cover;
+}
+
 @mixin box-style {
   background-color: #fff;
   border: $color-secondary 0.2px solid;
