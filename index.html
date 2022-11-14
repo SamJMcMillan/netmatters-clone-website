@@ -11,11 +11,13 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link href="css/hamburgers.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
+
     <script
       src="https://kit.fontawesome.com/65566a4b6d.js"
       crossorigin="anonymous"
@@ -67,8 +69,15 @@
                     <i class="fa-solid fa-phone"></i>
                   </button>
                   <div>
-                    <button class="hamburger">
-                      <i class="fa-solid fa-bars"></i>
+                    <button
+                      class="hamburger hamburger--spin"
+                      type="button"
+                      id="navButton"
+                      onclick="displayNav()"
+                    >
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -145,7 +154,7 @@
     </header>
     <!-- /Nav Bar -->
     <!-- Sidebar -->
-    <!-- <div class="container">
+    <div class="container" id="navList">
       <div class="sidebar">
         <div class="main visible-xs visible-sm">
           <ul>
@@ -259,7 +268,7 @@
           </ul>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- /Sidebar -->
     <!-- Hero Image -->
     <div class="hero-slides">
@@ -943,6 +952,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/navigation.js"></script>
 
     <!-- /JavaScript -->
   </body>

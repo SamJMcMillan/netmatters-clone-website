@@ -1,14 +1,5 @@
-.visible-lg,
-.visible-md,
-.visible-sm,
-.visible-xs {
-  display: none !important;
-}
-
 #container .sidebar {
   position: fixed;
-  top: 0;
-  right: 0;
   z-index: 9;
   height: 100%;
   background: $color-primary;

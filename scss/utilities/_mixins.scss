@@ -25,6 +25,7 @@
 
 @mixin button-default($color) {
   height: auto;
+  user-select: none;
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;

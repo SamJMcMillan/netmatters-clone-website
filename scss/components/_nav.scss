@@ -134,9 +134,12 @@ header #search-desktop {
   @include media-query(large) {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     text-align: center;
-    padding: 20px 150px;
+    padding: 0;
+    li {
+      padding: 20px 50px;
+    }
   }
 }

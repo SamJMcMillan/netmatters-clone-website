@@ -51,6 +51,7 @@
 
 .hero-text {
   text-align: center;
+  user-select: none;
   button {
     display: inline-block !important;
     margin-top: 10px !important;
@@ -68,6 +69,9 @@
 }
 
 // - Partner Slides ------ //
+.partner-slides {
+  user-select: none;
+}
 
 // - Review -------------- //
 

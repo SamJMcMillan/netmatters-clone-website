@@ -17,5 +17,7 @@ var partnerSlider = tns({
   controls: false,
   mouseDrag: true,
   swipeAngle: false,
+  autoplay: true,
+  speed: 400,
   fixedWidth: 250,
 });
