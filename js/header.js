@@ -1,19 +1,24 @@
-// Check scroll direction
+const body = document.body;
+let lastScroll = 0;
 
-var lastScrollTop = 0;
-const navbar = document.getElementsByClassName("sticky-header");
-$(window).scroll(() => {
-  var st = $(this).scrollTop();
-  if (st < lastScrollTop) {
-    $(navbar).addClass("sticky");
-  } else if (st > lastScrollTop) $(navbar).removeClass("sticky");
-  lastScrollTop = st;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+    body.style.paddingTop = "0px";
+  }
+
+  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
+    body.style.paddingTop = "215px";
+  }
+
+  lastScroll = currentScroll;
 });
-
-// $(window).scroll(function () {
-//   var sticky = $(".sticky-header"),
-//     scroll = $(window).scrollTop();
-
-//   if (scroll >= 100) sticky.addClass("sticky");
-//   else sticky.removeClass("sticky");
-// });

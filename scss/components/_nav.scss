@@ -2,17 +2,30 @@
   background-color: #fff;
 }
 
+.sticky-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  transition: all 300ms ease-in-out;
+}
+
+// Scroll up / down
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up {
+}
+
+// !Scroll up / down
+
 header .container {
   @include media-query("x-large") {
     display: flex;
   }
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
 }
 
 .inner-row {
