@@ -1,9 +1,11 @@
-#container .sidebar {
+.container .sidebar {
   position: fixed;
-  z-index: 9;
-  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  height: 100vh;
   background: $color-primary;
-  width: 275px;
+  width: 400px;
   overflow: auto;
   main {
     padding: 21px;
@@ -31,14 +33,27 @@
       color: #fff;
       text-decoration: none;
     }
+  }
+  &::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  .head-text {
+    background-color: lighten($color-primary, 5);
+  }
+  .second-text {
     &::before {
       content: "\BB";
       padding-right: 15px;
     }
   }
-  &::before,
-  ::after {
-    box-sizing: border-box;
+}
+
+.side-head {
+  &:hover {
+    .head-text {
+      background-color: lighten($color-primary, $amount: 10);
+    }
   }
 }
 

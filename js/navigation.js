@@ -5,10 +5,10 @@ $(navLinks).hide();
 
 function displayNav() {
   if (navLinks.style.display === "none") {
-    $(navLinks).slideDown(400);
+    $(navLinks).show();
     $(navBtn).addClass("is-active");
   } else {
-    $(navLinks).slideUp(400);
+    $(navLinks).hide();
     $(navBtn).removeClass("is-active");
   }
 
