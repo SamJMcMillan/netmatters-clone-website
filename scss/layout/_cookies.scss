@@ -1,0 +1,49 @@
+.cookie-popup {
+  background-color: #fff;
+  display: none;
+  color: black;
+  position: fixed;
+  z-index: 100;
+  top: 35%;
+  left: 38%;
+  border-radius: 5px;
+  max-width: 30%;
+  border: solid 1px lightgrey;
+  h3 {
+    border-bottom: solid 1px lightgray;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: grey;
+    border-bottom: solid 1px lightgrey;
+    padding: 10px 20px 40px;
+  }
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  button {
+    margin: 10px 30px;
+  }
+  .settings {
+    @include button-default($c-1-col);
+  }
+  .accept {
+    @include button-default($c-5-col);
+  }
+}
+
+#cookie-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
