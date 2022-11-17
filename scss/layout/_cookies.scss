@@ -5,9 +5,9 @@
   position: fixed;
   z-index: 100;
   top: 35%;
-  left: 38%;
+  left: 0;
   border-radius: 5px;
-  max-width: 30%;
+  max-width: 100%;
   border: solid 1px lightgrey;
   h3 {
     border-bottom: solid 1px lightgray;
@@ -19,10 +19,19 @@
     border-bottom: solid 1px lightgrey;
     padding: 10px 20px 40px;
   }
+  @include media-query("medium") {
+    left: 15vw;
+    max-width: 70%;
+  }
+  @include media-query("large") {
+    left: 35%;
+    max-width: 30%;
+  }
 }
 
 .cookie-buttons {
   display: flex;
+  justify-content: center;
   button {
     margin: 10px 30px;
   }
@@ -79,7 +88,12 @@
 
 .details-btn {
   justify-content: start;
-  max-width: 25%;
+  @include media-query("small") {
+    max-width: 50%;
+  }
+  @include media-query("large") {
+    max-width: 25%;
+  }
 }
 
 .settings-bot-btns {
