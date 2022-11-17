@@ -37,6 +37,7 @@ acceptCookies = () => {
   $(cookiePopup).hide();
   $(cookieOverlay).hide();
   $(settingsPage).hide();
+  $("html").removeClass("no-scroll");
   setCookie("cookie", true, 30);
 };
 
@@ -47,6 +48,7 @@ cookieMessage = () => {
     $(cookiePopup).show();
     $(cookieOverlay).show();
     $(settingsPage).hide();
+    $("html").addClass("no-scroll");
   }
 };
 

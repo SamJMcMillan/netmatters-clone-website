@@ -12,17 +12,21 @@ displayNav = () => {
   if (navLinks.style.display === "none") {
     $(navLinks).show();
     $(overlay).show();
-    body.style.width = "80%";
+    $("body").addClass("move-body");
+    $("nav").addClass("move-body");
     // Animates the hamburger button
     $(navBtn).addClass("is-active");
+    $("html").addClass("no-scroll");
     // If the navigation menu is already open, remove navigation menu elements and shift
     // the body of the website back in place
   } else {
     $(navLinks).hide();
     $(overlay).hide();
-    body.style.width = "100%";
+    $("body").removeClass("move-body");
+    $("nav").removeClass("move-body");
     // Animates the hamburger button
     $(navBtn).removeClass("is-active");
+    $("html").removeClass("no-scroll");
   }
 
   return true;

@@ -2,6 +2,7 @@
 var heroSlides = tns({
   container: ".hero-slides",
   mouseDrag: true,
+  touch: true,
   controls: false,
   autoplay: true,
   speed: 400,
