@@ -7,43 +7,43 @@
 // for it in the documentation is rather poor.
 
 .hero-image-1 {
-  @include hero-image("../../images/hero-images/hi1.jpg");
+  @include hero-image("images/hero-images/hi1.jpg");
   button {
     background-color: $c-1-col;
   }
 }
 .hero-image-2 {
-  @include hero-image("../../images/hero-images/hi2.jpg");
+  @include hero-image("images/hero-images/hi2.jpg");
   button {
     background-color: $c-1-col;
   }
 }
 .hero-image-3 {
-  @include hero-image("../../images/hero-images/hi3.jpg");
+  @include hero-image("images/hero-images/hi3.jpg");
   button {
     background-color: $c-2-col;
   }
 }
 .hero-image-4 {
-  @include hero-image("../../images/hero-images/hi4.jpg");
+  @include hero-image("images/hero-images/hi4.jpg");
   button {
     background-color: $c-3-col;
   }
 }
 .hero-image-5 {
-  @include hero-image("../../images/hero-images/hi5.jpg");
+  @include hero-image("images/hero-images/hi5.jpg");
   button {
     background-color: $c-4-col;
   }
 }
 .hero-image-6 {
-  @include hero-image("../../images/hero-images/hi6.jpg");
+  @include hero-image("images/hero-images/hi6.jpg");
   button {
     background-color: $c-5-col;
   }
 }
 .hero-image-7 {
-  @include hero-image("../../images/hero-images/hi7.jpg");
+  @include hero-image("images/hero-images/hi7.jpg");
   button {
     background-color: $c-6-col;
   }
