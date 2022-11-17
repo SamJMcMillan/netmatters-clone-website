@@ -1,10 +1,10 @@
 // - Hero Image ---------- //
 
-.tns-outer button {
-  display: none;
+.tns-outer {
+  button {
+    display: none;
+  }
 }
-// ^ This removes the autoplay button on the hero-slides, as the syntax
-// for it in the documentation is rather poor.
 
 .hero-image-1 {
   @include hero-image("../images/hero-images/hi1.jpg");

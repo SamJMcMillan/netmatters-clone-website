@@ -5,7 +5,6 @@ var heroSlides = tns({
   touch: true,
   controls: false,
   autoplay: true,
-  speed: 400,
   lazyload: true,
 });
 
@@ -20,5 +19,4 @@ var partnerSlider = tns({
   swipeAngle: false,
   autoplay: true,
   speed: 400,
-  fixedWidth: 250,
 });

@@ -5,7 +5,7 @@
     url($image);
   height: 510px;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
 }
 
 @mixin box-style {
