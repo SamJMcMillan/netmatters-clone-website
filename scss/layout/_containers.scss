@@ -44,7 +44,6 @@
 }
 .hero-image-7 {
   @include hero-image("../images/hero-images/hi7.jpg");
-  width: 110vw;
   button {
     background-color: $c-6-col;
   }
