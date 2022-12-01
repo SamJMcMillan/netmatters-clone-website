@@ -69,6 +69,7 @@
   button {
     display: inline-block !important;
     margin-top: 10px !important;
+    max-width: 200px;
     @include media-query("large") {
       margin-top: 40px !important;
     }
@@ -79,6 +80,13 @@
   @include media-query("large") {
     text-align: start;
   }
+}
+
+.hero-flex-wrap {
+  display: flex !important;
+  min-width: 100vw;
+  align-items: center;
+  left: 10px;
 }
 
 // - Partner Slides ------ //
@@ -94,6 +102,8 @@
 .review {
   position: relative;
   color: #fff;
+  font-weight: 400;
+  line-height: 30px;
   &::before {
     @include fixed-section;
     background-color: $color-primary;
@@ -107,6 +117,19 @@
   }
 }
 
+.quote {
+  font-size: larger;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.quote-author {
+  font-weight: 700;
+  font-size: large;
+  color: $color-lighter;
+  margin-bottom: 50px;
+}
+
 .stars {
   color: orange;
 }
@@ -115,6 +138,8 @@
 
 .newsletter {
   position: relative;
+  display: flex;
+  flex-direction: column;
   &::before {
     @include fixed-section;
     background: #ddd;
@@ -122,6 +147,14 @@
   }
   a {
     color: #fff;
+  }
+}
+
+.form-check {
+  .news-check {
+    border: solid 3px $color-primary;
+    font-size: 30px;
+    float: none;
   }
 }
 

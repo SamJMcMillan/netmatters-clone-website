@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.card-img-top {
+  border-radius: 0;
+}
+
 // - Service Card Mixin -------------- //
 
 @mixin card-hover-default($color) {
@@ -107,7 +111,7 @@
 .n-1,
 .n-2,
 .n-3 {
-  border-radius: 6px 6px 0 0;
+  border-radius: 0 0 3px 3px;
   &:hover {
     cursor: pointer;
     top: -10px;
