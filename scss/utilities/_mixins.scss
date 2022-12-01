@@ -6,11 +6,12 @@
   height: 510px;
   background-size: cover;
   width: 100vw;
+  display: flex;
 }
 
 @mixin box-style {
   background-color: #fff;
-  border: $color-secondary 0.2px solid;
+  border: #ddd 0.2px solid;
   box-shadow: $card-shadow;
 }
 

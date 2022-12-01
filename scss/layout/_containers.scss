@@ -9,43 +9,57 @@
 .hero-image-1 {
   @include hero-image("../images/hero-images/hi1.jpg");
   button {
-    background-color: $c-1-col;
+    @include button-default($c-1-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-2 {
   @include hero-image("../images/hero-images/hi2.jpg");
   button {
-    background-color: $c-1-col;
+    @include button-default($c-1-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-3 {
   @include hero-image("../images/hero-images/hi3.jpg");
   button {
-    background-color: $c-2-col;
+    @include button-default($c-2-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-4 {
   @include hero-image("../images/hero-images/hi4.jpg");
   button {
-    background-color: $c-3-col;
+    @include button-default($c-3-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-5 {
   @include hero-image("../images/hero-images/hi5.jpg");
   button {
-    background-color: $c-4-col;
+    @include button-default($c-4-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-6 {
   @include hero-image("../images/hero-images/hi6.jpg");
   button {
-    background-color: $c-5-col;
+    @include button-default($c-5-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 .hero-image-7 {
   @include hero-image("../images/hero-images/hi7.jpg");
   button {
-    background-color: $c-6-col;
+    @include button-default($c-6-col);
+    padding: 10px 20px 30px;
+    vertical-align: middle;
   }
 }
 
@@ -60,11 +74,10 @@
     }
   }
   @include media-query("x-large") {
-    padding-left: 200px;
+    padding-left: 250px;
   }
   @include media-query("large") {
     text-align: start;
-    position: absolute;
   }
 }
 

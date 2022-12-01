@@ -4,7 +4,6 @@
 
 @mixin nav-btns($color) {
   @include button-default($color);
-  border-radius: 2px;
   padding: 10px 20px;
   max-height: 55px;
   margin-right: 10px;
@@ -19,7 +18,7 @@
 }
 
 .cont {
-  @include nav-btns($c-1-col);
+  @include nav-btns($color-lighter);
   @include media-query(large) {
     display: inline;
   }
@@ -30,10 +29,9 @@
   padding: 15px 20px 3px;
   height: 56px;
   font-size: 1.7rem;
-  line-height: 1px;
   border: none;
-  vertical-align: bottom;
-  background-color: $c-1-col;
+  vertical-align: middle;
+  background-color: $color-lighter;
   color: #fff;
   display: none;
   @include media-query(medium) {

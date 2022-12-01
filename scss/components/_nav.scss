@@ -2,6 +2,12 @@
   background-color: #fff;
 }
 
+.nav-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .sticky-header {
   position: fixed;
   width: 100%;
@@ -34,12 +40,8 @@ header .container {
 }
 
 .inner {
-  padding: 20px !important;
+  padding: 20px;
   background-color: #fff;
-  margin: 0% !important;
-  @include media-query(large) {
-    padding: 30px 300px;
-  }
 }
 
 header #search-desktop {
@@ -118,41 +120,47 @@ header #search-desktop {
 
 .navbar-nav {
   display: none;
-  flex-grow: 1;
   text-transform: uppercase;
-  li a {
-    color: #fff;
-    .fa-box-open {
-      color: $c-1-col;
-    }
-    .fa-desktop {
-      color: $c-2-col;
-    }
-    .fa-chart-simple {
-      color: $c-3-col;
-    }
-    .fa-phone {
-      color: $c-4-col;
-    }
-    .fa-code {
-      color: $c-5-col;
-    }
-    .fa-shield-halved {
-      color: $c-6-col;
-    }
-    .fa-graduation-cap {
-      color: $c-7-col;
+  li {
+    gap: 10px;
+    a {
+      color: #fff;
+      .fa-box-open {
+        color: $c-1-col;
+      }
+      .fa-desktop {
+        color: $c-2-col;
+      }
+      .fa-chart-simple {
+        color: $c-3-col;
+      }
+      .fa-phone {
+        color: $c-4-col;
+      }
+      .fa-code {
+        color: $c-5-col;
+      }
+      .fa-shield-halved {
+        color: $c-6-col;
+      }
+      .fa-graduation-cap {
+        color: $c-7-col;
+      }
     }
   }
   @include media-query(large) {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     flex-direction: row;
     text-align: center;
+    gap: 30px;
     padding: 0;
     li {
-      padding: 20px 50px;
+      padding: 20px;
     }
+  }
+  @include media-query(x-large) {
+    gap: 70px;
   }
 }

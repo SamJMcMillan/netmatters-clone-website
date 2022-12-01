@@ -12,11 +12,13 @@
       crossorigin="anonymous"
     />
     <link href="css/hamburgers.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
 
     <script
       src="https://kit.fontawesome.com/65566a4b6d.js"
@@ -30,7 +32,7 @@
   <body>
     <!-- Nav Bar -->
     <header class="sticky-header">
-      <nav>
+      <nav class="nav-wrap">
         <div class="inner">
           <div class="container">
             <div class="row inner-row">
@@ -59,7 +61,9 @@
                         placeholder="Search..."
                       />
                       <button type="submit" class="search-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>
+                          <span class="fa-solid fa-magnifying-glass"></span>
+                        </span>
                       </button>
                     </div>
                   </form>
@@ -394,7 +398,7 @@
             Perfomance-driven digital and technology services with<br />
             complete transparency.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Contact us <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -408,7 +412,7 @@
             Bring your business together with<br />
             solutions that grow with you.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -422,7 +426,7 @@
             Fast and cost-effective IT support<br />
             services for your business.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -436,7 +440,7 @@
             Generating your new business through<br />
             results-driven marketing activities.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -450,7 +454,7 @@
             A new approach to connectivity, see how <br />
             we can help your business.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -464,7 +468,7 @@
             For businesses looking to make a strong <br />
             and effective first impression.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -478,7 +482,7 @@
             Keeping businesses and their customers<br />
             sensitive information protected.
           </h3>
-          <button class="mt-5 cont">
+          <button class="cont">
             Find out More<i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -489,13 +493,15 @@
     <div class="container my-5">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="float-start top-title">
+          <h1 class="float-start top-title">
             <strong>Our Services</strong>
-          </h2>
+          </h1>
         </div>
         <div class="col-md-6 top-view">
-          <h2 class="float-end">
-            <a href="#">View All <i class="fa-solid fa-arrow-right"></i> </a>
+          <h2 class="float-end h4">
+            <a href="#"
+              ><strong>View All </strong><i class="fa-solid fa-arrow-right"></i>
+            </a>
           </h2>
         </div>
       </div>
