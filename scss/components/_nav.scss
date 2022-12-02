@@ -122,7 +122,6 @@ header #search-desktop {
   display: none;
   text-transform: uppercase;
   li {
-    gap: 10px;
     a {
       color: #fff;
       .fa-box-open {
@@ -154,13 +153,130 @@ header #search-desktop {
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    gap: 30px;
-    padding: 0;
     li {
       padding: 20px;
     }
   }
   @include media-query(x-large) {
-    gap: 70px;
+    li {
+      padding: 20px 50px;
+      &:hover {
+        padding-bottom: 0px;
+      }
+    }
   }
+}
+
+.nav-bes {
+  &:hover {
+    background-color: lighten($c-1-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-bes {
+      display: flex;
+    }
+  }
+}
+.nav-sup {
+  &:hover {
+    background-color: lighten($c-2-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-sup {
+      display: flex;
+    }
+  }
+}
+.nav-dig {
+  &:hover {
+    background-color: lighten($c-3-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-dig {
+      display: flex;
+    }
+  }
+}
+.nav-tel {
+  &:hover {
+    background-color: lighten($c-4-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-tel {
+      display: flex;
+    }
+  }
+}
+.nav-web {
+  &:hover {
+    background-color: lighten($c-5-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-web {
+      display: flex;
+    }
+  }
+}
+.nav-sec {
+  &:hover {
+    background-color: lighten($c-6-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-sec {
+      display: flex;
+    }
+  }
+}
+.nav-dev {
+  &:hover {
+    background-color: lighten($c-7-col, 5);
+    a {
+      i {
+        color: #fff;
+      }
+    }
+    .banner-dev {
+      display: flex;
+    }
+  }
+}
+
+.banner-bes {
+  @include dropdown($c-1-col);
+}
+.banner-sup {
+  @include dropdown($c-2-col);
+}
+.banner-dig {
+  @include dropdown($c-3-col);
+}
+.banner-tel {
+  @include dropdown($c-4-col);
+}
+.banner-web {
+  @include dropdown($c-5-col);
+}
+.banner-sec {
+  @include dropdown($c-6-col);
+}
+.banner-dev {
+  @include dropdown($c-7-col);
 }

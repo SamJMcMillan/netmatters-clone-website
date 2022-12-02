@@ -148,6 +148,14 @@
   a {
     color: #fff;
   }
+  h2 {
+    font-weight: 400;
+  }
+  input {
+    &:focus {
+      box-shadow: 10px -10px 10px -10px rgba(150, 226, 227, 1);
+    }
+  }
 }
 
 .form-check {
@@ -155,10 +163,13 @@
     border: solid 3px $color-primary;
     font-size: 30px;
     float: none;
+    background-color: none;
+    border-radius: 3px;
+    margin-right: 10px;
   }
 }
 
-label .required::after {
+.required::after {
   content: " *";
   color: red;
 }

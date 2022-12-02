@@ -28,6 +28,7 @@
   outline: none;
   padding: 15px 20px 3px;
   height: 56px;
+  line-height: 5px;
   font-size: 1.7rem;
   border: none;
   vertical-align: middle;
@@ -40,6 +41,10 @@
   }
   @include media-query(x-large) {
     border-radius: 0 3px 3px 0;
+  }
+  &:hover,
+  &:focus {
+    background-color: darken($color-lighter, 10%);
   }
 }
 
@@ -97,13 +102,17 @@
 
 // - News ---------- //
 
-.n-1 button,
-.n-3 button {
+.n-btn-1,
+.n-btn-3 {
   @include button-default($c-1-col);
+  padding: 8px;
+  max-width: 130px;
 }
 
-.n-2 button {
+.n-btn-2 {
   @include button-default($c-3-col);
+  padding: 8px;
+  max-width: 130px;
 }
 
 .newsletter button {

@@ -24,6 +24,9 @@
   }
   button {
     @include button-default($color);
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
   }
   :hover {
     cursor: pointer;
@@ -77,6 +80,9 @@
   .avatar {
     display: table-cell;
     vertical-align: middle;
+    img {
+      border-radius: 100%;
+    }
   }
   .user-info {
     padding-left: 20px;
@@ -84,6 +90,15 @@
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+.card-text {
+  min-height: 120px;
+  font-size: 14px;
+}
+
+.card-title {
+  min-height: 60px;
 }
 
 .news-tag {
@@ -108,6 +123,25 @@
   }
 }
 
+.n-1 {
+  h5 {
+    color: $c-1-col;
+    font-weight: 700;
+  }
+}
+.n-2 {
+  h5 {
+    color: $c-3-col;
+    font-weight: 700;
+  }
+}
+.n-3 {
+  h5 {
+    color: $c-1-col;
+    font-weight: 700;
+  }
+}
+
 .n-1,
 .n-2,
 .n-3 {
@@ -115,7 +149,7 @@
   &:hover {
     cursor: pointer;
     top: -10px;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
   }
 }
 

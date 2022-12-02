@@ -14,6 +14,30 @@
   box-shadow: $card-shadow;
 }
 
+@mixin dropdown($color) {
+  display: none;
+  width: 100vw;
+  left: 0%;
+  position: absolute;
+  margin-top: 20px;
+  padding: 50px;
+  background-color: $color;
+  text-transform: none;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    align-self: flex-start;
+    margin-left: 250px;
+  }
+  div {
+    column-gap: 75px;
+    font-size: larger;
+    display: flex;
+  }
+}
+
 @mixin fixed-section {
   content: "";
   position: absolute;
