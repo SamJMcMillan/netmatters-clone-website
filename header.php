@@ -5,7 +5,7 @@
           <div class="container">
             <div class="row inner-row">
               <div class="col-xs-4 col-sm-6 col-md-5 col-lg-4">
-                <a class="logo" href="#">
+                <a class="logo" href="index.php">
                   <img src="images/f-logo.png" alt="Netmatters Logo" />
                 </a>
               </div>
@@ -16,9 +16,11 @@
                   <button type="button" class="spt">
                     <i class="fa-solid fa-computer-mouse"></i> Support
                   </button>
+                  <a href="contact.php">
                   <button type="button" class="cont">
                     <i class="fa-solid fa-paper-plane"></i> Contact
                   </button>
+                  </a>
                 </div>
                 <div>
                   <form id="search-desktop" class="mx-4">

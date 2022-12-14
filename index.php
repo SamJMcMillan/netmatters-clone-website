@@ -637,7 +637,7 @@
         </div>
         <div class="col-md-6 top-view">
           <h2 class="float-end h4">
-            <a href="#"
+            <a href="news.php"
               ><strong>View All</strong><i class="fa-solid fa-arrow-right"></i>
             </a>
           </h2>
